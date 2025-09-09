@@ -1,13 +1,9 @@
-function findArg(x) {
-  if (x == 0) {
-    console.log("No argument");
-  } else if (x == 1) {
-    console.log("Argument found");
-  } else {
-    console.log("Arguments found");
-  }
-}
+const args = process.argv.slice(2);
 
-findArg(0);
-findArg(1);
-findArg(5);
+if (args.length == 0) {
+  console.log("No argument");
+} else if (args.length == 1) {
+  console.log("Argument found");
+} else {
+  console.log("Arguments found");
+}
